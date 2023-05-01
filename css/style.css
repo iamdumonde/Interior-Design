@@ -1,0 +1,266 @@
+/* ===================
+GENERALITES
+==================== */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* RESET */
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+/* ==============================
+Partition des espaces disponibles
+========================== */
+.header {
+    flex-basis: 20%;
+}
+
+.twoofthem {
+    flex-basis: 80%;
+    margin-left: 340px;
+    margin-right: 50px;
+}
+
+/* =============================
+HEADER
+=========================== */
+.header {
+    background-color: #f44236;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-left: 40px;
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+
+}
+
+.header ul li {
+    list-style: none;
+    margin-block: 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.header ul {
+    padding-left: 0;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff; 
+    padding-block: 0.5em;
+    padding-left: 0.4em;
+    padding-right: 7em;
+}
+
+.header h3 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.header a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+
+/* ===================================
+MAIN
+================================ */
+.main {
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 50px;
+    color: #e9443e;
+    font-weight: bold;
+}
+
+/* Section Showcase */
+h2 {
+    flex-basis: 100%;
+    border-bottom: 6px solid #e9443e;
+}
+
+.showcase {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+}
+
+.showcase img {
+    width: 47%;
+}
+
+/* Section Services */
+.services {
+    margin-top: 70px;
+}
+
+/* Section Designers */
+.designers {
+    margin-top: 70px;
+}
+
+.designers figure {
+    margin-left: 0;
+    width: 29%;
+    background-color: #f1f1f1;
+}
+
+.designers2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.designers2 h3 {
+    flex-basis: 100%;
+}
+
+.designers2 img {
+    width: 100%;
+}
+
+figcaption {
+    margin-inline: 0.7em;
+    text-align: left;
+}
+
+/* Section Packages */
+.packages {
+    margin-top: 70px;
+}
+
+th,
+td {
+    border: 1px solid #eaeaea;
+}
+
+table {
+    border-collapse: collapse;
+    width: 48%;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.tableau {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+th {
+    padding-block: 1.5em;
+    color: #fff;
+    font-size: 30px;
+}
+
+td {
+    padding-block: 1.5em;
+}
+
+.thbasic {
+    background-color: #616161;
+}
+
+.thpro {
+    background-color: #f44236;
+}
+
+table span {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+table a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.signblack {
+    color: #000;
+    padding: 0.5em 1em;
+    background-color: #fff;
+}
+
+.signwhite {
+    color: #fff;
+    padding: 0.5em 1em;
+    background-color: #f54134;
+}
+
+
+/* Section de Contact */
+.contact {
+    margin-block: 70px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+div label {
+    display: inline-block;
+    flex-basis: 100%;
+}
+
+div input {
+    width: 100%;
+    height: 40px;
+}
+
+.inputlast {
+    border: 1px solid #f54134;
+    background-color: #f54134;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/* ================================
+FOOTER
+================================= */
+.footer {
+    text-align: right;
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.footer a {
+    color: #000;
+}
+
+.footer p {
+    padding-block: 70px;
+}
